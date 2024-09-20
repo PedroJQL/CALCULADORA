@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('/img/fondo.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+/* Estilo del encabezado */
+.headerC {
+    background-color: #27B8B3;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.headerC h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.headerC h2 {
+    margin: 10px 0 0 0;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+/* Estilo del contenido principal */
+.mainC {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainC h3 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+/* Estilo de la sección de operaciones */
+.contenedor {
+    display: grid; /* Cambiado de flex a grid */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Crea columnas flexibles */
+    gap: 20px; /* Espacio entre los elementos */
+    margin-bottom: 30px;
+}
+
+.elementos {
+    background-color: #f4f4f4;
+    border: 2px solid #27B8B3;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.elementos a {
+    text-decoration: none;
+    color: #27B8B3;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.elementos:hover {
+    background-color: #27B8B3;
+    transform: scale(1.05);
+}
+
+.elementos a:hover {
+    color: white;
+}
+
+/* Estilo de la sección de definiciones */
+section h2 {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+section p {
+    font-size: 1em;
+    margin: 5px 0;
+    color: #555;
+}
+
+section p strong {
+    color: #27B8B3;
+}
+
+/* Estilo del pie de página */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #27B8B3;
+    color: white;
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+}
